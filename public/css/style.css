@@ -18,8 +18,9 @@ aside nav.side-nav li {
 
 aside nav.side-nav a {
   display: block !important;
-  padding: var(--pd-08);
+  padding: var(--pd-1-2) var(--pd-08);
   text-align: center;
+
 }
 aside nav.side-nav svg {
   fill: var(--clr-light-white);
@@ -29,7 +30,15 @@ aside nav.side-nav svg {
 /* Hover effect */
 aside nav.side-nav a:hover {
   background-color: #484848;
-  border-radius: var(--pd-08);
+  border-radius: var(--pd-1-2);
+  transition: background-color 0.24s ease;
+}
+aside nav.side-nav a.active {
+  border-radius: var(--pd-1-2);
+  background-color: var(--clr-green);
+}
+aside nav.side-nav a.active > svg {
+  fill: var(--clr-light-white);
 }
 .user-img {
   margin: 0 auto;
@@ -76,7 +85,7 @@ aside nav.side-nav li:nth-child(4) {
 section#middle-section {
   background-color: var(--clr-bg);
   min-width: var(--min-width);
-  padding: var(--pd-08);
+  padding: var(--pd-08) var(--pd-1-6);
 }
 
 section#middle-section h3 {
@@ -85,7 +94,7 @@ section#middle-section h3 {
 
 /* search */
 div.search {
-  margin-top: var(--mg-1-2);
+  margin-top: var(--mg-2);
 }
 
 div.search form {
@@ -112,7 +121,7 @@ div.search input:focus {
   outline: none;
 }
 button.btn-search {
-  padding: var(--pd-08) var(--pd-08);
+  padding: var(--pd-04) var(--pd-08);
 }
 button.btn-search .search-icon {
   width: 1.9rem;
@@ -122,7 +131,7 @@ button.btn-search .search-icon {
 /* message list */
 
 div.message-list {
-  margin: var(--mg-1-6) 0;
+  margin-top: var(--mg-3);
 }
 
 div.message-list .message-element {
@@ -150,7 +159,7 @@ div.user-message-info .message {
 .message-stats .message-count {
   margin-top: var(--pd-04);
   margin-left: var(--pd-08);
-  background-color: var(--clr-side-nav);
+  background-color: var(--clr-green);
   color: var(--clr-bg);
   display: block;
   width: 2rem;
@@ -167,7 +176,7 @@ section#message-container {
 /* header section */
 header {
   background-color: var(--clr-bg);
-  padding: var(--pd-08) var(--pd-1-2);
+  padding: var(--pd-08) var(--pd-2);
 }
 header nav ul {
   display: flex;
@@ -215,9 +224,13 @@ header .logged-user-img img {
 /* message box */
 
 .message-box {
-  background-color: var(--clr-white);
   min-height: 90vh;
   border-radius: var(--pd-2);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 var(--mg-08);
+  margin: 0 var(--mg-2);
+  padding: var(--pd-1-6);
+  border-right: 1px solid #e3e3e3;
+  background-color: var(--clr-white);
+}
+.message-wrapper {
 }
