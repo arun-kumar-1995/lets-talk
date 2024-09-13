@@ -5,11 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let's Talk</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- <div class="user-img">
+        <img src="./assets/user-icon.png" alt="User Image" />
+      </div> -->
     <div id="app">
       <main>
-        <h1>Hello world</h1>
+        <aside>
+          <nav class="side-nav">
+            <ul>
+              <li>
+                <div class="app-logo">
+                  <span class="circle c-1"></span>
+                  <span class="circle c-2"></span>
+                </div>
+              </li>
+              <li>
+                <a href="/chats.html" title="Chats">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M0 1v16.981h4v5.019l7-5.019h13v-16.981h-24zm7 10c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5zm5 0c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/logout" title="Sign Out">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8 10v-5l8 7-8 7v-5h-8v-4h8zm2-8v2h12v16h-12v2h14v-20h-14z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/settings" title="Settings">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <section id="middle-section">
+          <h3 class="section-title">Messages</h3>
+
+          <div class="search">
+            <form action="/search-user" class="form" method="POST">
+              <input type="text" placeholder="search.." name="search-user" />
+              <button class="btn btn-search">
+                <svg
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  class="search-icon"
+                >
+                  <path
+                    d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- message list -->
+
+          <div class="message-list">
+            <div class="message-element">
+              <div class="send-message user-img">
+                <img src="./assets/user-icon.png" alt="user-img" />
+              </div>
+              <div class="user-message-info">
+                <h4 class="send-message-name">Amaira</h4>
+                <p class="message message-status">
+                  You get new message in the chat
+                </p>
+
+                <div class="message-stats">
+                  <p class="message-sent-time">10:45</p>
+                  <p class="message-status message-count">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="message-container">
+          <div class="message">Hii</div>
+        </section>
       </main>
     </div>
   </body>
