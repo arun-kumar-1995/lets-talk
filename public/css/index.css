@@ -14,12 +14,16 @@
 
   --clr-side-nav: #2d0844;
   --clr-bg: #f5f6fa;
+  --clr-light-white: #f5f6fa;
   --clr-white: #fff;
   --clr-white-2: #f0f0f0;
   --clr-red: #fefefe;
-  --clr-text-dark: #131313;
+  --clr-text-dark: #141313;
   --clr-search-fill: #999191;
   --clr-input-fill: #eeeeee;
+  --clr-green: #27ae60;
+  --clr-red: #d64c4c;
+  --clr-nav:#212121;
 
   /* margin and padding */
 
@@ -135,7 +139,7 @@ span {
 body {
   min-width: var(--min-width);
   min-height: var(--min-height);
-  background-color: var(--clr-white);
+  background-color: var(--clr-bg);
   color: var(--clr-text-dark);
 }
 

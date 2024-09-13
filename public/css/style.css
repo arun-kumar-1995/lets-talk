@@ -1,6 +1,6 @@
 /* side nav */
 aside nav.side-nav {
-  background: var(--clr-side-nav);
+  background: var(--clr-nav);
   height: var(--min-height);
   display: block;
   width: 5.4rem;
@@ -22,12 +22,13 @@ aside nav.side-nav a {
   text-align: center;
 }
 aside nav.side-nav svg {
-  fill: var(--clr-white-2);
+  fill: var(--clr-light-white);
+  fill: var(--clr-green);
 }
 
 /* Hover effect */
 aside nav.side-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #484848;
   border-radius: var(--pd-08);
 }
 .user-img {
@@ -41,7 +42,7 @@ aside nav.side-nav a:hover {
   margin-bottom: 20px;
 }
 
-aside nav.side-nav li:nth-child(3) {
+aside nav.side-nav li:nth-child(4) {
   margin-top: auto;
 }
 
@@ -156,4 +157,67 @@ div.user-message-info .message {
   height: 2rem;
   border-radius: 50%;
   text-align: center;
+}
+
+/* last section */
+section#message-container {
+  flex: 1;
+  width: 100%;
+}
+/* header section */
+header {
+  background-color: var(--clr-bg);
+  padding: var(--pd-08) var(--pd-1-2);
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav li:nth-child(2) {
+  margin-left: auto;
+}
+
+/* Notification icon */
+header .chat-notification {
+  position: relative;
+  margin-right: var(--mg-3);
+  cursor: pointer;
+}
+
+/* Notification badge (dot) */
+header .notification {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  background-color: var(--clr-red);
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+}
+header .notification:hover {
+  background-color: var(--clr-white);
+}
+
+header .logged-user-img img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding: var(--pd-04);
+  object-fit: cover;
+}
+
+.user-status {
+  color: var(--clr-green);
+}
+
+/* message box */
+
+.message-box {
+  background-color: var(--clr-white);
+  min-height: 90vh;
+  border-radius: var(--pd-2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 var(--mg-08);
 }
