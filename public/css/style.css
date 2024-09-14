@@ -1,4 +1,7 @@
 /* side nav */
+aside {
+  display: none;
+}
 aside nav.side-nav {
   background: var(--clr-nav);
   height: var(--min-height);
@@ -85,7 +88,8 @@ aside nav.side-nav li:nth-child(4) {
 
 section#middle-section {
   background-color: var(--clr-bg);
-  min-width: var(--min-width);
+  /* min-width: var(--min-width); */
+  width: 100%;
 }
 
 section#middle-section h3 {
@@ -372,4 +376,40 @@ div.chat {
   padding: var(--pd-08) var(--pd-1-2);
   background-color: #e3e3e3;
   left: 0;
+}
+
+/* handle responsive */
+
+section#message-container {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  aside {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  aside {
+    display: none !important;
+  }
+  section#middle-section {
+    width: 24rem;
+  }
+  section#message-container {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 968px) {
+  aside {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  section#middle-section {
+    min-width: var(--min-width);
+  }
 }
