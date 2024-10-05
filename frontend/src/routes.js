@@ -8,7 +8,7 @@ const Chat = lazy(() => import("./pages/Chat"));
 const routes = [
   { path: "/", element: Home },
   { path: "/login", element: Login },
-  { path: "/sign-in", element: SignUp },
+  { path: "/sign-up", element: SignUp },
   { path: "/chats", element: Chat },
 ];
 export default routes;

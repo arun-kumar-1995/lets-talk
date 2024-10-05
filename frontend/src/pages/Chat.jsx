@@ -1,8 +1,10 @@
 import React from "react";
-
+import Rooms from "../components/Rooms/Rooms";
 const Chat = () => {
   <div className="">
-    <h1>Chat Container</h1>
+    <section>
+      <Rooms />
+    </section>
   </div>;
 };
 
