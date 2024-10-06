@@ -169,3 +169,174 @@ li.chat-msg .user-name {
   text-transform: capitalize;
   color: var(--clr-text-dark);
 }
+
+/* section component */
+.section-long {
+  flex: 1;
+  background-color: #fff;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 90vh;
+}
+
+.channel-header-top {
+  padding: 1.6rem 1.2rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.c-header-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.channel-header-top .c-members {
+  margin-left: auto;
+}
+
+.c-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.c-logo {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 0.8rem;
+  padding: 0.4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: contain;
+}
+
+.c-info h4 {
+  font-weight: var(--font-wt-600);
+}
+.c-info p {
+  font-size: 1.2rem;
+}
+
+/* members */
+.c-members {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #fafafa;
+  border-radius: 0.4rem;
+}
+
+.c-members .member-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.c-member + .c-member {
+  margin-left: -1.5em;
+}
+
+button.add-cmembers {
+  padding: 0.6rem 1.6rem;
+  border: 1px solid;
+  margin-left: 3em;
+  margin-right: 1.2em;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+}
+.c-totalmembers {
+  padding: 0.4rem;
+  color: #555;
+}
+
+button.c-more-info {
+}
+button.c-more-info svg {
+  font-size: 2rem;
+}
+
+.message-container {
+  overflow: hidden;
+  height: 78vh;
+  position: relative;
+}
+/* chats */
+.chats-container {
+  padding: 0 2%;
+  overflow-y: auto;
+  /* height: 85%; */
+}
+
+.chat {
+  padding: 0.4rem;
+  margin: 0.8em 0;
+  display: flex;
+}
+
+.chat .chat-user-img {
+  width: 3.8rem;
+  height: 3.8rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0.8em;
+  border-radius: 0.4rem;
+}
+
+.chat-details h4 {
+  font-weight: var(--font-wt-600);
+}
+.chat-details h4 span {
+  font-weight: var(--font-wt-400);
+  font-size: 1.2rem;
+  color: #555;
+  margin-left: 0.4em;
+}
+
+.chat-details p {
+  font-size: 1.2rem;
+}
+
+/* input form */
+
+.input-wrapper {
+  position: absolute;
+  bottom: var(--pd-1-2);
+  left: 0;
+  right:0;
+}
+
+form.text-form {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-white);
+  box-sizing: 0 0 5px 10px rgba(0, 0, 0 .5);
+}
+
+form.text-form button.add-file {
+  background-color: #db3e0f;
+  color: #f0f0f0;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+}
+
+.input-wrapper {
+  width: 96%;
+  margin: 0 2%;
+  border-radius: 0.8rem;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem 1.2rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.input-wrapper input:focus {
+  border: none;
+  outline: none;
+}
