@@ -1,5 +1,5 @@
 import React from "react";
-import Rooms from "../components/Rooms";
+import Rooms from "../components/RoomSection";
 const rooms = ["Shayri", "Walpaper", "Robotics"];
 
 const Chats = () => {

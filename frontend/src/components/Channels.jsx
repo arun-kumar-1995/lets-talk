@@ -23,7 +23,7 @@ const Channels = ({ channels = [] }) => {
               channels.map((channel, index) => (
                 <li key={index} className="channel-list">
                   <Link
-                    to={`channel?id=${index}&name=${ConvertHref(channel)}`}
+                    to={`channel/id=${index}?name=${ConvertHref(channel)}`}
                     className={`channel ${index === 0 ? "active-channel" : ""}`}
                   >
                     {channel}
