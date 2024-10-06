@@ -1,0 +1,66 @@
+header {
+  padding: 1rem 2%;
+}
+
+header nav {
+  margin-left: 6.5rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.6em;
+  width: 100%;
+}
+header nav li:nth-child(2) {
+  margin-left: auto;
+}
+
+/* notification */
+.notification-bell {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+
+.bell-icon {
+  font-size: 2.4rem;
+  color: #444;
+}
+
+.notification-count {
+  position: absolute;
+  background-color: #db3e0f;
+  top: -4px;
+  right: 0px;
+  color: white;
+  padding: 0.4rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+.notification-bell:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.user-profile {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  outline: 1px solid #666;
+  outline-offset: 2px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.24);
+}
+
+.user-profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-profile:hover {
+  cursor: pointer;
+}

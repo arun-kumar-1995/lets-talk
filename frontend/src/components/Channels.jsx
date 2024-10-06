@@ -1,24 +1,31 @@
 import React from "react";
 import { MdAdd } from "react-icons/md";
-import "./channel.css";
 import { Link } from "react-router-dom";
+
+const ConvertHref = (textStr) => {
+  const words = textStr.trim().replace(/\s+/g, " ").split(" ");
+  return words.map((word) => word.toLowerCase()).join("-");
+};
 
 const Channels = ({ channels = [] }) => {
   return (
     <section className="s-channels">
       <div className="channel-wrapper">
-        <div className="channel-header">
-          <p>Channels</p>
+        <div className="channel-header d-flex">
+          <p className="s-title">Channels</p>
           <button className="btn btn-add">
             <MdAdd />
           </button>
         </div>
-        <div className="channel-container">
+        <div className="channel-container s-contain">
           <ul className="channel-list-wrapper">
             {channels &&
               channels.map((channel, index) => (
                 <li key={index} className="channel-list">
-                  <Link to={channel} className="channel">
+                  <Link
+                    to={`channel?id=${index}&name=${ConvertHref(channel)}`}
+                    className={`channel ${index === 0 ? "active-channel" : ""}`}
+                  >
                     {channel}
                   </Link>
                 </li>
