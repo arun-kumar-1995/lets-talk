@@ -18,7 +18,7 @@ const DirectMessage = ({ chatMsg = [] }) => {
             {chatMsg &&
               chatMsg.map((chat, index) => (
                 <li key={index} className="chat-msg">
-                  <Link to={`chat/${index}?chatuser=${chat}`}>
+                  <Link to={`/chat/${index}?chatuser=${chat}`}>
                     <div className="user-icon">
                       <img src={img} alt="user-image" />
                     </div>

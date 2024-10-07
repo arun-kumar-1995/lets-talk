@@ -1,20 +1,20 @@
 import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import { MdAdd } from "react-icons/md";
+import Capitalized from "../Helpers/Capitalized";
+import ConvertHref from "../Helpers/ConvertHref";
 
-const Capitalized = (string) => {
-  const words = string.split(" ");
-  return words.map((word) => word.charAt(0).toUpperCase());
-};
 const RoomSection = ({ rooms }) => {
   return (
     <section className="room-section">
       <aside>
         <nav>
           <ul className="rooms">
-            {rooms.map((room, index) => (
+            {rooms.map((channel, index) => (
               <li key={index} className="room">
-                <Link to={room}>{Capitalized(room)}</Link>
+                <Link to={`/channel/id=${index}?name=${ConvertHref(channel)}`}>
+                  {Capitalized(ConvertHref(channel))}
+                </Link>
               </li>
             ))}
             <li>

@@ -4,13 +4,13 @@ const Home = lazy(() => import("./pages/Home"));
 const Login = lazy(() => import("./pages/Login"));
 const SignUp = lazy(() => import("./pages/SignUp"));
 const Channel = lazy(() => import("./pages/Channel"));
-const Chats = lazy(() => import("./pages/Chats"));
+const Chat = lazy(() => import("./pages/Chat"));
 
 const routes = [
   { path: "/", element: Home },
   { path: "/login", element: Login },
   { path: "/sign-up", element: SignUp },
-  { path: "/channel/:id", element: Channel },
-  { path: "/chat/:chatId", element: Chats },
+  { path: "/channel/:c-id", element: Channel },
+  { path: "/chat/:chatId", element: Chat },
 ];
 export default routes;

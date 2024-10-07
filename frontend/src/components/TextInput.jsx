@@ -3,7 +3,7 @@ import { MdAdd } from "react-icons/md";
 
 const TextInput = () => {
   return (
-    <div class="input-wrapper">
+    <div className="input-wrapper">
       <form action="" class="text-form">
         <button className="add-file">
           <MdAdd />

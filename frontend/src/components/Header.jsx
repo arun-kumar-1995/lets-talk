@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../user-icon.png";
 import "../styles/header.css";
-import { FaBell } from "react-icons/fa";
+
 import { MdOutlineNotificationsNone } from "react-icons/md";
 
 const Header = ({ notificationCount = 4 }) => {

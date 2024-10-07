@@ -1,11 +1,7 @@
 import React from "react";
 import { MdAdd } from "react-icons/md";
 import { Link } from "react-router-dom";
-
-const ConvertHref = (textStr) => {
-  const words = textStr.trim().replace(/\s+/g, " ").split(" ");
-  return words.map((word) => word.toLowerCase()).join("-");
-};
+import ConvertHref from "../Helpers/ConvertHref";
 
 const Channels = ({ channels = [] }) => {
   return (
@@ -23,7 +19,7 @@ const Channels = ({ channels = [] }) => {
               channels.map((channel, index) => (
                 <li key={index} className="channel-list">
                   <Link
-                    to={`channel/id=${index}?name=${ConvertHref(channel)}`}
+                    to={`/channel/id=${index}?name=${ConvertHref(channel)}`}
                     className={`channel ${index === 0 ? "active-channel" : ""}`}
                   >
                     {channel}

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import HocSection from "../components/HOC/CommonSection";
 const Channel = () => {
   return (
     <Fragment>
@@ -7,4 +8,5 @@ const Channel = () => {
   );
 };
 
-export default Channel;
+
+export default HocSection(Channel);
