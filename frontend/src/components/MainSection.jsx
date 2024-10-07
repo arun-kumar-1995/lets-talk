@@ -7,7 +7,7 @@ import TextInput from "./TextInput";
 
 const chats = [];
 
-const ChannelSection = () => {
+const MainSection = () => {
   return (
     <div className="s-section section-long">
       <div className="channel-header-top">
@@ -50,4 +50,4 @@ const ChannelSection = () => {
   );
 };
 
-export default ChannelSection;
+export default MainSection;

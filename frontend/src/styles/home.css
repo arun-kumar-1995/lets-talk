@@ -5,6 +5,7 @@
 }
 .s-title {
   flex: 1;
+  font-weight: var(--font-wt-600);
 }
 
 .s-contain {
@@ -74,9 +75,9 @@ button.btn-newroom svg {
 /* middle-container */
 
 .middle-container {
-  min-width: 24rem;
+  flex: 1;
+  width: 100%;
   padding: 1.2rem 1.6rem;
-  margin-left: 7rem;
 }
 
 .btn-add {
@@ -172,7 +173,7 @@ li.chat-msg .user-name {
 
 /* section component */
 .section-long {
-  flex: 1;
+  display: none;
   background-color: #fff;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
@@ -305,14 +306,14 @@ button.c-more-info svg {
   position: absolute;
   bottom: var(--pd-1-2);
   left: 0;
-  right:0;
+  right: 0;
 }
 
 form.text-form {
   display: flex;
   align-items: center;
   background-color: var(--clr-white);
-  box-sizing: 0 0 5px 10px rgba(0, 0, 0 .5);
+  box-sizing: 0 0 5px 10px rgba(0, 0, 0 0.5);
 }
 
 form.text-form button.add-file {
@@ -340,3 +341,47 @@ form.text-form button.add-file {
   border: none;
   outline: none;
 }
+
+/* handle responsive */
+.room-section {
+  display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  .room-section {
+    display: block !important;
+  }
+  .middle-container {
+    margin-left: 7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .room-section {
+    display: none !important;
+  }
+  .middle-container {
+    flex: 0;
+    min-width: 30rem;
+    padding: 1.2rem 1.6rem;
+    margin-left: 0rem;
+  }
+
+  .s-section {
+    display: block !important;
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .room-section {
+    display: block !important;
+  }
+  .middle-container {
+    margin-left: 7rem;
+  }
+}
+
+/* @media only screen and (min-width: 1080px) { */
+
+/* } * */

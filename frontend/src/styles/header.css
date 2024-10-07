@@ -1,9 +1,5 @@
 header {
-  padding: 1.2rem 1.5%;
-}
-
-header nav {
-  margin-left: 6.5rem;
+  padding: 0.8rem 2%;
 }
 
 header nav ul {
@@ -12,6 +8,7 @@ header nav ul {
   gap: 1.6em;
   width: 100%;
 }
+
 header nav li:nth-child(2) {
   margin-left: auto;
 }
@@ -64,4 +61,26 @@ header nav li:nth-child(2) {
 
 .user-profile:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 576px) {
+  header nav {
+    margin-left: 7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 1.2rem 2%;
+  }
+
+  header nav {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header nav {
+    margin-left: 7rem;
+  }
 }
