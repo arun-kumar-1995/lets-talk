@@ -1,7 +1,7 @@
 import React from "react";
 import { MdAdd } from "react-icons/md";
 import { Link } from "react-router-dom";
-import img from "../user-img-sq.jpeg";
+import img from "../../assets/images/user-img-sq.jpeg";
 
 const DirectMessage = ({ chatMsg = [] }) => {
   return (

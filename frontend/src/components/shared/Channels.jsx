@@ -1,7 +1,7 @@
 import React from "react";
 import { MdAdd } from "react-icons/md";
 import { Link } from "react-router-dom";
-import ConvertHref from "../Helpers/ConvertHref";
+import ConvertHref from "../../utils/ConvertHref";
 
 const Channels = ({ channels = [] }) => {
   return (

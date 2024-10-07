@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import Header from "../Header";
-import RoomSection from "../RoomSection";
-import MiddleSection from "../MiddleSection";
+import Header from "../common/Header";
+import SideLayout from "../../layouts/SideLayout";
+import MiddleLayout from "../../layouts/MiddleLayout";
 
 const rooms = ["shayri dunia", "walpaper", "robotics"];
 const channels = ["design work", "task completion", "important notice"];
@@ -14,8 +14,8 @@ const HocSection = (Component) => {
       <Header />
       <div className="app-container">
         {/* add common section here */}
-        <RoomSection rooms={rooms} />
-        <MiddleSection channels={channels} chatMsg={chatsMsg} />
+        <SideLayout rooms={rooms} />
+        <MiddleLayout channels={channels} chatMsg={chatsMsg} />
         <Component {...props} />
       </div>
     </Fragment>

@@ -181,7 +181,8 @@ li.chat-msg .user-name {
   height: 90vh;
 }
 
-.channel-header-top {
+.channel-header-top ,
+.chat-top-header {
   padding: 1.6rem 1.2rem;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -219,6 +220,9 @@ li.chat-msg .user-name {
   font-size: 1.2rem;
 }
 
+.status-online{
+  color: #1dbe1d
+}
 /* members */
 .c-members {
   display: flex;

@@ -1,12 +1,17 @@
 import React, { Fragment } from "react";
-import HocSection from "../components/HOC/CommonSection";
+import HocSection from "../components/hoc/CommonSection";
+import MainSection from "../layouts/MainLayout";
+import ChannelTopHeader from "../components/common/ChannelHeader";
+import MessageContainer from "../layouts/MessageLayout";
 const Channel = () => {
   return (
     <Fragment>
-      <h1>Channel</h1>
+      <MainSection>
+        <ChannelTopHeader />
+        <MessageContainer />
+      </MainSection>
     </Fragment>
   );
 };
-
 
 export default HocSection(Channel);

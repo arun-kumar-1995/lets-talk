@@ -1,7 +1,7 @@
 import React from "react";
 
-const MainSection = ({ children }) => {
+const MainLayout = ({ children }) => {
   return <div className="s-section section-long">{children}</div>;
 };
 
-export default MainSection;
+export default MainLayout;

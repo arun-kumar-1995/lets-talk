@@ -1,14 +1,19 @@
-import React from "react";
-import Rooms from "../components/RoomSection";
-const rooms = ["Shayri", "Walpaper", "Robotics"];
+import React, { Fragment } from "react";
 
-const Chats = () => {
-  <div className="app-container">
-    <h1>Chat page</h1>
-    <section className="room-section">
-      <Rooms rooms={rooms} />
-    </section>
-  </div>;
+import HocSection from "../components/hoc/CommonSection";
+import MainSection from "../layouts/MainLayout";
+import MessageContainer from "../layouts/MessageLayout";
+import ChatTopHeader from "../components/common/ChatHeader ";
+
+const Chat = () => {
+  return (
+    <Fragment>
+      <MainSection>
+        <ChatTopHeader />
+        <MessageContainer />
+      </MainSection>
+    </Fragment>
+  );
 };
 
-export default Chats;
+export default HocSection(Chat);

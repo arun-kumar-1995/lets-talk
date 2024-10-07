@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../user-icon.png";
-import "../styles/header.css";
+import img from "../../assets/images/user-icon.png";
+import "../../styles/header.css";
 
 import { MdOutlineNotificationsNone } from "react-icons/md";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Chat from "./Chat";
+import Chat from "../shared/Chat";
 
 const ChatsContainer = ({ chats = [] }) => {
   return (

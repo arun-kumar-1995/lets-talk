@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../user-img-sq.jpeg";
+import img from "../../assets/images/user-img-sq.jpeg";
 
 const Chat = ({ chat = {} }) => {
   return (

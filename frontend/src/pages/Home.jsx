@@ -1,16 +1,18 @@
 import React, { Fragment } from "react";
 import "../styles/home.css";
 
-import HocSection from "../components/HOC/CommonSection";
-import MainSection from "../components/MainSection";
-import ChannelTopHeader from "../components/ChannelTopHeader";
-import MessageContainer from "../components/MessageContainer";
+import HocSection from "../components/hoc/CommonSection";
+import MainSection from "../layouts/MainLayout";
+import ChannelTopHeader from "../components/common/ChannelHeader";
+import MessageContainer from "../layouts/MessageLayout";
+import ChatTopHeader from "../components/common/ChatHeader ";
 
 const Home = () => {
   return (
     <Fragment>
       <MainSection>
-        <ChannelTopHeader />
+        {/* <ChannelTopHeader /> */}
+        <ChatTopHeader />
         <MessageContainer />
       </MainSection>
     </Fragment>

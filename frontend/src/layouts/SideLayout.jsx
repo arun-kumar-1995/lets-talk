@@ -1,10 +1,10 @@
 import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import { MdAdd } from "react-icons/md";
-import Capitalized from "../Helpers/Capitalized";
-import ConvertHref from "../Helpers/ConvertHref";
+import Capitalized from "../utils/Capitalized";
+import ConvertHref from "../utils/ConvertHref";
 
-const RoomSection = ({ rooms }) => {
+const SideLayout = ({ rooms }) => {
   return (
     <section className="room-section">
       <aside>
@@ -29,4 +29,4 @@ const RoomSection = ({ rooms }) => {
   );
 };
 
-export default RoomSection;
+export default SideLayout;

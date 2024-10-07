@@ -1,6 +1,6 @@
 import React from "react";
-import channelImg from "../designwork.png";
-import userImg from "../user-icon.png";
+import channelImg from "../../assets/images/designwork.png";
+import userImg from "../../assets/images/user-icon.png";
 import { MdMoreVert } from "react-icons/md";
 
 const ChannelTopHeader = () => {
