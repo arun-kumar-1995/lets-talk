@@ -1,0 +1,124 @@
+/* middle-container */
+
+.s-title {
+  flex: 1;
+  font-weight: var(--font-wt-600);
+}
+
+.middle-container {
+  flex: 1;
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+}
+
+.btn-add {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.btn-add:hover {
+  outline: 1px solid #e3e3e3;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.channel-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.8em;
+}
+
+/* channel list  */
+ul.channel-list-wrapper {
+  width: 100%;
+}
+
+ul.channel-list-wrapper li:first-child {
+  margin-top: 0;
+}
+
+ul.channel-list-wrapper li a {
+  padding: 0.6em 0.8rem;
+  display: block;
+  width: 100%;
+  padding-left: 1.8rem;
+  text-transform: capitalize;
+  color: var(--clr-text-dark);
+  transition: background-color 0.24s ease-in;
+}
+
+ul.channel-list-wrapper li a.active-channel {
+  background-color: #fff;
+  border-left: 4px solid #db3e0f;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.24);
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  color: #db3e0f;
+}
+
+ul.channel-list-wrapper li a:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 0.2rem;
+}
+
+/* direct message */
+
+ul.directmsg-wrapper {
+  margin-top: 1.2em;
+}
+
+li.chat-msg {
+  margin: 0.4em 0;
+}
+
+li.chat-msg a {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+li.chat-msg a:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.user-icon {
+  width: 4rem;
+  height: 4rem;
+  float: left;
+  margin-right: 0.8em;
+}
+
+.user-icon img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+li.chat-msg a {
+  clear: both;
+}
+
+li.chat-msg .user-name {
+  line-height: 4rem;
+  text-transform: capitalize;
+  color: var(--clr-text-dark);
+}
+
+@media only screen and (min-width: 576px) {
+  .middle-container {
+    margin-left: 7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .middle-container {
+    flex: 0;
+    min-width: 30rem;
+    padding: 1.2rem 1.6rem;
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .middle-container {
+    margin-left: 7rem;
+  }
+}

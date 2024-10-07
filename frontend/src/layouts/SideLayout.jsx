@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { MdAdd } from "react-icons/md";
 import Capitalized from "../utils/Capitalized";
 import ConvertHref from "../utils/ConvertHref";
+import "../styles/sidelayout.css";
 
 const SideLayout = ({ rooms }) => {
   return (

@@ -1,0 +1,74 @@
+/* room section */
+
+.room-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  outline: 1px solid #e3e3e3;
+  background-color: var(--clr-nav);
+}
+
+.room-section aside {
+  padding: 0.4rem 0.8rem;
+}
+
+ul.rooms {
+  min-height: 100vh;
+}
+
+ul.rooms li {
+  margin: 0.8em 0;
+}
+ul.rooms li:first-child {
+  margin: 0;
+}
+
+ul.rooms a {
+  display: block;
+  width: 100%;
+  border: 1px solid;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid;
+  border-radius: 1.2rem;
+  text-align: center;
+}
+
+button.btn-newroom {
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  color: #f0f0f0;
+  border-radius: 0.8rem;
+}
+button.btn-newroom:hover {
+  outline: 0.4px solid #e3e3e3;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.btn-newroom svg {
+  font-size: 2.2rem;
+}
+
+/* handle responsive */
+.room-section {
+  display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  .room-section {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .room-section {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .room-section {
+    display: block !important;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Channels from "../components/shared/Channels";
 import DirectMessage from "../components/common/DirectMessage";
+import "../styles/midlayout.css";
 
 const MiddleLayout = ({ channels, chatMsg }) => {
   return (

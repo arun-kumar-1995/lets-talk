@@ -12,7 +12,13 @@ const HocSection = (Component) => {
     <Fragment>
       {/* header is common so it used */}
       <Header />
-      <div className="app-container">
+      <div
+        className="app-container"
+        style={{
+          display: "flex",
+          width: "100%",
+        }}
+      >
         {/* add common section here */}
         <SideLayout rooms={rooms} />
         <MiddleLayout channels={channels} chatMsg={chatsMsg} />
