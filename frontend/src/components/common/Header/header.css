@@ -1,5 +1,5 @@
 header {
-  padding: 0.8rem 2%;
+  padding: 0.8rem 1.6rem;
 }
 
 header nav ul {
@@ -194,7 +194,7 @@ button.notification-close {
 
 @media only screen and (min-width: 768px) {
   header {
-    padding: 1.2rem 2%;
+    padding: 1.2rem 1.6rem;
   }
 
   header nav {

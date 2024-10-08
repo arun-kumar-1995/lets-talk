@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import img from "../../assets/images/user-icon.png";
-import "../../styles/header.css";
+import img from "../../../assets/images/user-icon.png";
+import "./header.css";
 
-import Notification from "./Notification";
-import ProfileController from "./ProfileControl";
+import Notification from "../Notification";
+import ProfileController from "../ProfileControl";
 
 import { MdOutlineNotificationsNone } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Header = ({ notificationCount = 4 }) => {
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
-  const [isProfileOpen, setIsProfileOpen] = useState(true);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   const handleNotificationChange = () => {
     setIsNotificationOpen((prev) => !prev);

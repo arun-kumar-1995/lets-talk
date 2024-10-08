@@ -11,7 +11,7 @@ const Chat = ({ chat = {} }) => {
       <div className="chat-details">
         <h4 className="text-name">
           Kenny
-          <span class="text-time">5:45 PM</span>
+          <span className="text-time">5:45 PM</span>
         </h4>
         <p className="chat-text">
           we wish the sam for the next for the days...............

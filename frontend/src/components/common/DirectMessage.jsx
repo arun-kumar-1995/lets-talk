@@ -7,7 +7,12 @@ const DirectMessage = ({ chatMsg = [] }) => {
   return (
     <section className="s-directmsg">
       <div className="directmsg-wrapper">
-        <div className="directmsg-header d-flex">
+        <div
+          className="directmsg-header"
+          style={{
+            display: "flex",
+          }}
+        >
           <p className="s-title">Direct message</p>
           <button className="btn btn-add">
             <MdAdd />
