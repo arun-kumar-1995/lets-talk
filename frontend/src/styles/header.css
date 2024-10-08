@@ -13,6 +13,10 @@ header nav li:nth-child(2) {
   margin-left: auto;
 }
 
+header .connect-logo a {
+  font-size: 2rem;
+  color: var(--clr-text-dark);
+}
 /* notification */
 .notification-bell {
   position: relative;
@@ -63,6 +67,122 @@ header nav li:nth-child(2) {
   cursor: pointer;
 }
 
+/* notification */
+.notification-wrapper,
+.profile-control-wrapper {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.notification-container,
+.profile-container {
+  position: absolute;
+  margin-left: auto;
+  background-color: #fff;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.32s ease-in-out;
+}
+
+.notification-container {
+  border-radius: 0.8rem;
+  right: 72px;
+  top: 10vh;
+  min-height: 72vh;
+  width: 36rem;
+}
+
+.notification-control {
+  display: flex;
+  padding: 0.8rem 2%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-bg);
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.notification-control h4 {
+  font-weight: var(--font-wt-600);
+  margin-left: 0.8em;
+}
+
+button.notification-close {
+  padding: 0.4rem 0.8rem;
+  font-size: 2.2rem;
+}
+
+/* profile control */
+
+.profile-container {
+  top: 10vh;
+  right: 24px;
+  width: 20rem;
+  border-radius: 0.4rem;
+}
+.control-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-bg);
+  padding: 0.8rem;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.control-header h4 {
+  margin-left: 0.4em;
+}
+
+.btn-profile-close,
+.notification-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.btn-profile-close:hover,
+.notification-close:hover {
+  color: #f44336;
+}
+
+.profile-control button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
+  font-size: 1.8rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.profile-control button span {
+  margin-left: 0.8em;
+}
+
+.profile-control button:hover {
+  background-color: #eeeeee;
+  transform: translateY(-2px);
+}
+
+.profile-control button .btn-logout,
+.profile-control button .btn-setting {
+  margin-right: 10px;
+}
+
+.profile-control button span {
+  font-size: 14px;
+  color: #333;
+  flex-grow: 1;
+  text-align: left;
+}
 
 /* handling responsive */
 
